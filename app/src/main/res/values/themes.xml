@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="Base.Theme.OCYearbook" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/openclassrooms</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.OCYearbook" parent="Base.Theme.OCYearbook" />
+</resources>

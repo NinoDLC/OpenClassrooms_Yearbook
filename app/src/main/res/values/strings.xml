@@ -1,0 +1,11 @@
+<resources>
+    <string name="java" translatable="false">Java</string>
+    <string name="kotlin" translatable="false">Kotlin</string>
+
+    <string name="app_name">OC Yearbook</string>
+    <string name="mentor">Mentor</string>
+
+    <string name="nino_name" translatable="false">Anthony \'<b>Nino</b>\' DELCEY</string>
+    <string name="nino_toast">I like <font color="#d9950d">cats</font> 😼 and <font color="#735a28">dogs</font> 🐶!</string>
+    <string name="a11y_nino_photo">Nino\'s photo</string>
+</resources>
