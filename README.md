@@ -1,5 +1,5 @@
 ## What is it ?
-At first glance, this is just a [Yearbook](https://en.wikipedia.org/wiki/Yearbook) for OpenClassrooms' Android students. Gotta feel proud of these years spent stuying!
+At first glance, this is just a [Yearbook](https://en.wikipedia.org/wiki/Yearbook) for OpenClassrooms' Android students. Gotta feel proud of these years spent studying!
 
 But there's more:
 * This is **your time to shine**! Show your best Android skills to present yourself! **Fork the project**, iterate on it, and create a **Pull Request**!
