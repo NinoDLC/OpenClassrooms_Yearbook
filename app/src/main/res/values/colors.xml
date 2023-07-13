@@ -3,5 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="openclassrooms">#7451EB</color>
+    <color name="kotlin_start_color">#7F52FF</color>
+    <color name="kotlin_middle_color">#B125EA</color>
+    <color name="kotlin_end_color">#E24462</color>
     <color name="java">#f89820</color>
 </resources>
