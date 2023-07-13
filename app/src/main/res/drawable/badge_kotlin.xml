@@ -6,8 +6,7 @@
     <corners android:radius="8dp" />
     <gradient
         android:angle="45"
-        android:startColor="@color/kotlin_start_color"
-        />
-    <gradient android:centerColor="@color/kotlin_middle_color" />
-    <gradient android:endColor="@color/kotlin_end_color" />
+        android:centerColor="@color/kotlin_middle_color"
+        android:endColor="@color/kotlin_end_color"
+        android:startColor="@color/kotlin_start_color" />
 </shape>
