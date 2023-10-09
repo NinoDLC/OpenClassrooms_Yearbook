@@ -7,5 +7,6 @@
 
     <string name="nino_name" translatable="false">Anthony \'<b>Nino</b>\' DELCEY</string>
     <string name="nino_toast">I like <font color="#d9950d">cats</font> 😼 and <font color="#735a28">dogs</font> 🐶!</string>
+    <string name="david_toast">❤️ In an open relationship with <font color="#e7298d">Minnie</font> \n ----------------- 🖕🏻 Mickey 🖕🏻 ----------------</string>
     <string name="a11y_nino_photo">Nino\'s photo</string>
 </resources>
