@@ -4,8 +4,13 @@
 
     <string name="app_name">OC Yearbook</string>
     <string name="mentor">Mentor</string>
+    <string name="student">Student</string>
 
     <string name="nino_name" translatable="false">Anthony \'<b>Nino</b>\' DELCEY</string>
     <string name="nino_toast">I like <font color="#d9950d">cats</font> 😼 and <font color="#735a28">dogs</font> 🐶!</string>
-    <string name="a11y_nino_photo">Nino\'s photo</string>
+    <string name="a11y_nino_photo">Nino\'s grimacing</string>
+
+    <string name="david_name" translatable="false">David</string>
+    <string name="david_toast">❤️ In an open relationship with <font color="#e7298d">Minnie</font> ❤️ \n ----------------- 🖕🏻 Mickey 🖕🏻 ----------------</string>
+    <string name="a11y_david_photo">David hanging out with Minnie</string>
 </resources>

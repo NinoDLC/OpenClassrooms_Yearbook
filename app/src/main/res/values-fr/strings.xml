@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">OC Yearbook</string>
     <string name="mentor">Mentor</string>
+    <string name="student">Student</string>
 
     <string name="nino_toast">J\'aime les <font color="#d9950d">chats</font> 😼 et les <font color="#735a28">chiens</font> 🐶!</string>
     <string name="a11y_nino_photo">Une photo de Nino en train de faire une grimace avec des grosses lunettes de soleil</string>
+
+    <string name="david_toast">❤️ En couple libre avec <font color="#e7298d">Minnie</font> ❤️ \n --------------- 🖕🏻 Mickey 🖕🏻 --------------</string>
+    <string name="a11y_david_photo">David sort avec Minnie</string>
 </resources>
