@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -13,14 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/peoples_Guideline_half_vertical"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.5"
-            />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/people_RecyclerView"
@@ -33,7 +24,6 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:listitem="@layout/people_item"
             />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -1,85 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
-    android:fillViewport="true">
-
+    >
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/peoples_Guideline_half_vertical"
+        android:id="@+id/people_item_Guideline_half_vertical"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.5"
+        />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/peoples_CardView"
+        android:id="@+id/people_item_CardView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:foreground="?selectableItemBackground"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/peoples_Guideline_half_vertical"
+        app:layout_constraintEnd_toEndOf="@id/people_item_Guideline_half_vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0">
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
 
             <ImageView
-                android:id="@+id/peoples_photo"
-                android:layout_width="wrap_content"
+                android:id="@+id/people_item_ImageView_photo"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/a11y_nino_photo"
+                android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/nino"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:contentDescription="@string/a11y_nino_photo"
+                tools:src="@drawable/nino"
+                />
 
             <TextView
-                android:id="@+id/name"
+                android:id="@+id/people_item_TextView_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:gravity="center"
-                android:text="@string/nino_name"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toTopOf="@id/peoples_Barrier_skills"
+                app:layout_constraintBottom_toTopOf="@id/people_item_Barrier_skills"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/peoples_photo" />
+                app:layout_constraintTop_toBottomOf="@id/people_item_ImageView_photo"
+                tools:text="@string/nino_name"
+                />
 
             <androidx.constraintlayout.widget.Barrier
-                android:id="@+id/peoples_Barrier_skills"
+                android:id="@+id/people_item_Barrier_skills"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:barrierDirection="top"
-                app:constraint_referenced_ids="peoples_TextView_function,peoples_TextView_nino_first_language,peoples_TextView_nino_second_language" />
+                app:constraint_referenced_ids="people_item_TextView_role,people_item_TextView_first_language,people_item_TextView_second_language"
+                />
 
             <TextView
-                android:id="@+id/peoples_TextView_function"
+                android:id="@+id/people_item_TextView_role"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:background="@drawable/badge_openclassrooms"
                 android:paddingStart="6dp"
                 android:paddingEnd="6dp"
-                android:text="@string/mentor"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/peoples_TextView_nino_first_language"
+                app:layout_constraintEnd_toStartOf="@id/people_item_TextView_first_language"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/name" />
+                app:layout_constraintTop_toBottomOf="@id/people_item_TextView_name"
+                tools:text="@string/mentor"
+                />
 
             <TextView
-                android:id="@+id/peoples_TextView_nino_first_language"
+                android:id="@+id/people_item_TextView_first_language"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -90,12 +97,13 @@
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/peoples_TextView_nino_second_language"
-                app:layout_constraintStart_toEndOf="@id/peoples_TextView_function"
-                app:layout_constraintTop_toBottomOf="@id/name" />
+                app:layout_constraintEnd_toStartOf="@id/people_item_TextView_second_language"
+                app:layout_constraintStart_toEndOf="@id/people_item_TextView_role"
+                app:layout_constraintTop_toBottomOf="@id/people_item_TextView_name"
+                />
 
             <TextView
-                android:id="@+id/peoples_TextView_nino_second_language"
+                android:id="@+id/people_item_TextView_second_language"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -107,10 +115,9 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/peoples_TextView_nino_first_language"
-                app:layout_constraintTop_toBottomOf="@id/name" />
+                app:layout_constraintStart_toEndOf="@id/people_item_TextView_first_language"
+                app:layout_constraintTop_toBottomOf="@id/people_item_TextView_name"
+                />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
